@@ -4,12 +4,15 @@
   </thead>
   <tbody>
     <% for u in @usuarios : %>
-    <td><%- u.lugar %></td>
-    <td><a href="https://github.com/<%- u.login %>"><%- u.login %></a></td>
-    <td><%- u.contributions %></td>
-    <td><%- u.stars %></td>
-    <td><%- u.language %></td>
-    <td> <%- u.location %></td>
-    <td><img src="<%- u.gravatar %>" width="64px" height="64px" alt="<%- u.name %>"/></td>
+      <tr>
+      <td><%- u.lugar %></td>
+      <td><a href="https://github.com/<%- u.login %>"><%- u.login %></a></td>
+      <td><%- u.contributions %></td>
+      <td><%- u.stars %></td>
+      <td><%- u.language %></td>
+      <td> <%- u.location %></td>
+      <td><img src="<%- u.gravatar %>" width="64px" height="64px" alt="<%- u.name %>"/></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
