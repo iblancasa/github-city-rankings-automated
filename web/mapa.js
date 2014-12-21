@@ -469,4 +469,281 @@ function initialize() {
 
 
 
+  /******************************************************O*/
+  var orense = new google.maps.LatLng(42.3383626,-7.8636856);
+  var orenseG = new google.maps.Marker({
+    position: orense,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(orenseG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+  /******************************************************P*/
+  var palencia = new google.maps.LatLng(42.0088161,-4.5269538);
+  var palenciaG = new google.maps.Marker({
+    position: palencia,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(palenciaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+  var palmas = new google.maps.LatLng( 28.1173608,-15.439617);
+  var palmasG = new google.maps.Marker({
+    position: palmas,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(palmasG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var pontevedra = new google.maps.LatLng(42.4338608,-8.6393456);
+  var pontevedraG = new google.maps.Marker({
+    position: pontevedra,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(pontevedraG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+  /******************************************************R*/
+  var rioja = new google.maps.LatLng(42.2816493,-2.4064864);
+  var riojaG = new google.maps.Marker({
+    position: rioja,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(riojaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  /******************************************************S*/
+  var salamanca = new google.maps.LatLng(40.9634385,-5.6692121);
+  var salamancaG = new google.maps.Marker({
+    position: salamanca,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(salamancaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+  var tenerife = new google.maps.LatLng(28.2932285,-16.522718);
+  var tenerifeG = new google.maps.Marker({
+    position: tenerife,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(tenerifeG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var segovia = new google.maps.LatLng(40.9118568,-4.1942675);
+  var segoviaG = new google.maps.Marker({
+    position: segovia,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(segoviaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var sevilla = new google.maps.LatLng(37.3753708,-5.9550582);
+  var sevillaG = new google.maps.Marker({
+    position: sevilla,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(sevillaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var soria = new google.maps.LatLng(41.7671215,-2.4745791);
+  var soriaG = new google.maps.Marker({
+    position: soria,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(soriaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+
+  /******************************************************T*/
+  var tarragona = new google.maps.LatLng(41.1258048,1.2385834);
+  var tarragonaG = new google.maps.Marker({
+    position: tarragona,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(tarragonaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var teruel = new google.maps.LatLng(40.3450096,-1.1009648);
+  var teruelG = new google.maps.Marker({
+    position: teruel,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(teruelG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var toledo = new google.maps.LatLng(39.8622093,-3.9910839);
+  var toledoG = new google.maps.Marker({
+    position: toledo,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(toledoG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  /******************************************************V*/
+
+  var valencia = new google.maps.LatLng(39.4077853,-0.3615113);
+  var valenciaG = new google.maps.Marker({
+    position: valencia,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(valenciaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+  var valladolid = new google.maps.LatLng(41.6081478,-4.6907529);
+  var valladolidG = new google.maps.Marker({
+    position: valladolid,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(valladolidG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var vizcaya = new google.maps.LatLng(43.2195617,-2.9309957);
+  var vizcayaG = new google.maps.Marker({
+    position: vizcaya,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(vizcayaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+  /******************************************************V*/
+  var zamora = new google.maps.LatLng(41.5038098,-5.7445361);
+  var zamoraG = new google.maps.Marker({
+    position: zamora,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(zamoraG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+  var zaragoza = new google.maps.LatLng(41.6516912,-0.8949809);
+  var zaragozaG = new google.maps.Marker({
+    position: zaragoza,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(zaragozaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+  /***************************************Ciudades autónomas*/
+  var ceuta = new google.maps.LatLng(35.8889625,-5.3185258);
+  var ceutaG = new google.maps.Marker({
+    position: ceuta,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(ceutaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+  var melilla = new google.maps.LatLng(35.2862716,-2.9445265);
+  var melillaG = new google.maps.Marker({
+    position: melilla,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(melillaG, 'click', function() {
+    $(".ciudades").hide(500);
+    $("#avila").show(500);
+  });
+
+
+
+
 }
