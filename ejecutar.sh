@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source keys
+
 ciudades[0]="Alava";
 ciudades[1]="Albacete";
 ciudades[2]="Alicante";
@@ -54,11 +56,12 @@ ciudades[50]="Ceuta";
 ciudades[51]="Melilla";
 
 
-
-for i in "${ciudades[@]}"
-do
-    echo $i;
-    ./get-city.coffee $i;
-    echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++";
-    sleep 1m;
+while true; do
+  for i in "${ciudades[@]}"
+  do
+      echo $i;
+      ./get-city.coffee $i;
+      sleep 1m;
+  done
+  sleep 10m;
 done
