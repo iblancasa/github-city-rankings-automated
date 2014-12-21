@@ -11,4 +11,3 @@ city=process.argv[2] || "Vigo"
 city_top = new Top city, id, secret
 
 city_top.get_logins renderer
-
