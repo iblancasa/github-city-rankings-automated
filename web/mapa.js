@@ -25,13 +25,10 @@ function initialize() {
 
   google.maps.event.addListener(alavaG, 'click', function() {
     $("#ciudad").hide(500);
-
     $.get( "../top-github-users-data/formatted/top-Alava.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
-
-
   });
 
 
@@ -44,8 +41,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(albaceteG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#albacete").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Albacete.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -58,8 +58,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(alicanteG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#alicante").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Alicante.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -72,8 +75,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(almeriaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#almeria").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Almeria.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -86,8 +92,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(asturiasG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#asturias").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Asturias.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -100,8 +109,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(avilaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Avila.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -114,8 +126,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(badajozG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Badajoz.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -128,8 +143,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(barcelonaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Barcelona.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -142,8 +160,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(burgosG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Burgos.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -156,8 +177,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(caceresG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Caceres.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -169,8 +193,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(cadizG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Cadiz.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -183,8 +210,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(cantabriaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Cantabria.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -197,8 +227,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(castellonG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Castellon.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -211,8 +244,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(ciudadRealG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Ciudad.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -225,8 +261,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(cordobaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Cordoba.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -239,8 +278,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(corunaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Coruña.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -254,8 +296,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(geronaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Gerona.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -269,8 +314,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(granadaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Granada.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -283,8 +331,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(guadalajaraG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Guadalajara.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -297,8 +348,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(guipuzcoaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Guipuzcoa.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -312,8 +366,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(huelvaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Huelva.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -327,8 +384,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(huescaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Huesca.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -344,8 +404,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(balearesG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Baleares.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -360,8 +423,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(jaenG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Jaen.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -375,8 +441,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(leonG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Leon.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -390,8 +459,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(leridaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Lerida.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -405,8 +477,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(lugoG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Lugo.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -419,8 +494,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(madridG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Madrid.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -433,8 +511,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(malagaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Malaga.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -448,8 +529,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(murciaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Murcia.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -463,8 +547,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(navarraG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Navarra.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -478,8 +565,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(orenseG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Orense.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -493,8 +583,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(palenciaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Palencia.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -507,8 +600,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(palmasG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Las.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -520,8 +616,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(pontevedraG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Pontevedra.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -535,8 +634,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(riojaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Rioja.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -549,8 +651,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(salamancaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Salamanca.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -563,8 +668,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(tenerifeG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Tenerife.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -576,8 +684,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(segoviaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Segovia.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -589,8 +700,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(sevillaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Sevilla.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -602,8 +716,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(soriaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Soria.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -618,8 +735,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(tarragonaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Tarragona.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -631,8 +751,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(teruelG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Teruel.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -644,8 +767,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(toledoG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Toledo.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -659,8 +785,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(valenciaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Valencia.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -673,8 +802,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(valladolidG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Valladolid.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -686,8 +818,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(vizcayaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Vizcaya.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -701,8 +836,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(zamoraG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Zamora.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
 
@@ -714,8 +852,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(zaragozaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Zaragoza.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
   /***************************************Ciudades autónomas*/
@@ -727,8 +868,11 @@ function initialize() {
   });
 
   google.maps.event.addListener(ceutaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Ceuta.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
 
   var melilla = new google.maps.LatLng(35.2862716,-2.9445265);
@@ -739,11 +883,10 @@ function initialize() {
   });
 
   google.maps.event.addListener(melillaG, 'click', function() {
-    $(".ciudades").hide(500);
-    $("#avila").show(500);
+    $("#ciudad").hide(500);
+    $.get( "../top-github-users-data/formatted/top-Melilla.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
   });
-
-
-
-
 }
