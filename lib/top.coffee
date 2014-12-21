@@ -24,7 +24,7 @@ sortStats = (stats) ->
         .map (login) ->
                 stats[login]
 
-                
+
 class Top
         constructor: ( city, id, secret ) ->
                 if  fs.existsSync "#{city}.json"
@@ -41,7 +41,7 @@ class Top
                 @logins = []
                 @stats = []
                 @sorted_stats = []
-                
+
 
         # Retrieves statistics for one user from the web site
         getStats: (html) =>
@@ -57,7 +57,7 @@ class Top
             text = $('.vcard-stats > a:nth-child(1) > .vcard-stat-count').text().trim()
             multiplier = if text.indexOf('k') > 0 then 1000 else 1
             (parseFloat text) * multiplier
-        
+
           pageDesc = $('meta[name="description"]').attr('content')
 
           # compute stars
@@ -85,9 +85,9 @@ class Top
                         console.log row
                         this_row.push( row[column] ) for column in columns
                         output.push this_row.join( ";" )
-                fs.writeFileSync( file_name, output.join("\n"))      
-                
-                 
+                fs.writeFileSync( file_name, output.join("\n"))
+
+
 
         # Retrieves logins and puts everythin else in motion
         get_logins: ( renderer ) =>
@@ -108,7 +108,7 @@ class Top
                                 this.to_csv( @sorted_stats, @output_dir+"/data/user-data-"+@city+".csv")
                                 today = new Date()
                                 from = new Date()
-                                from.setYear today.getFullYear() - 1	
+                                from.setYear today.getFullYear() - 1
                                 data=
                                         start_date: from.toGMTString()
                                         end_date: from.toGMTString()
@@ -119,9 +119,9 @@ class Top
                                         console.log user
                                         user.lugar = i++
                                         data.usuarios.push( user )
-                                fs.writeFileSync(@output_dir+"/formatted/top-"+@city+".md"
+                                fs.writeFileSync(@output_dir+"/formatted/top-"+@city+".html"
                                         , renderer.render(@layout, data) )
                                 @sorted_stats
-                                
+
 
 module.exports = Top

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>GitHub Spain Ranking</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="estilo.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="mapa.js"></script>
+</head>
+<body>
+  <div id="map-canvas"></div>
+  <aside id="panel">
+    <section id="ciudad"></section>
+
+
+    <section id="aviso">
+        <p><a href="https://github.com/iblancasa/TweetMonuments">TweetMonuments</a> de <a href="https://github.com/iblancasa">Iblancasa</a> bajo licencia GPLv2</p>
+    </section>
+  </aside>
+</body>
+<script type="text/javascript">
+  google.maps.event.addDomListener(window, 'load', initialize);
+  $(".monumento").hide();
+</script>
+<script src="fix.js"></script>
+</html>
