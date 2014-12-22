@@ -49,10 +49,6 @@ class Top
           byProp = (field) -> $("[itemprop='#{field}']")
           getInt = (text) -> parseInt text.replace ',', ''
           getOrgName = (item) -> $(item).attr('aria-label')
-          getStars = ->
-                stars = 0
-                stars += parseInt( num.children[0].data.trim() ) for num in $("span.stars")
-                stars
           getFollowers = ->
             text = $('.vcard-stats > a:nth-child(1) > .vcard-stat-count').text().trim()
             multiplier = if text.indexOf('k') > 0 then 1000 else 1
@@ -68,13 +64,19 @@ class Top
                 language: (/\sin ([\w-+#\s\(\)]+)/.exec(pageDesc)?[1] ? '')
                 gravatar: byProp('image').attr('href').replace(400,64)
                 followers: getFollowers()
-                stars : getStars()
+                stars : 0
                 organizations: $('#site-container > div > div > div.column.one-fourth.vcard > div.clearfix > a').toArray().map(getOrgName)
                 contributions: getInt $('#contributions-calendar > div:nth-child(3) > span.contrib-number').text()
                 contributionsStreak: getInt $('#contributions-calendar > div:nth-child(4) > span.contrib-number').text()
                 contributionsCurrentStreak: getInt $('#contributions-calendar > div:nth-child(5) > span.contrib-number').text()
           @stats[userStats.login] = userStats
           userStats
+
+        add_stars: (html) =>
+            $ = cheerio.load html
+            login = $("[itemprop='additionalName']").text().trim()
+            userStats = @stats[login]
+            userStats.stars += parseInt(num.children[2].data.trim()) for num in $("[aria-label='Stargazers']")
 
         # Writes in CSV format
         to_csv: ( an_array, file_name ) =>
@@ -87,10 +89,33 @@ class Top
                         output.push this_row.join( ";" )
                 fs.writeFileSync( file_name, output.join("\n"))
 
+        # Formats and outputs files
+        give_format: =>
+                @sorted_stats = sortStats @stats
+                fs.writeFileSync(@output_dir+"/data/user-data-"+@city+".json"
+                        , JSON.stringify(@sorted_stats))
+                this.to_csv( @sorted_stats, @output_dir+"/data/user-data-"+@city+".csv")
+                today = new Date()
+                from = new Date()
+                from.setYear today.getFullYear() - 1
+                data=
+                        start_date: from.toGMTString()
+                        end_date: from.toGMTString()
+                        ciudad : @city
+                        usuarios: []
+                i = 1
+                for user in @sorted_stats
+                        console.log user
+                        user.lugar = i++
+                        data.usuarios.push( user )
+                fs.writeFileSync(@output_dir+"/formatted/top-"+@city+".html"
+                        , @renderer.render(@layout, data) )
+                @sorted_stats
 
 
         # Retrieves logins and puts everythin else in motion
         get_logins: ( renderer ) =>
+                @renderer = renderer
                 urls = utils.range(1, MAX_PAGES + 1).map (page) => "https://api.github.com/search/users?client_id=#{@id}&client_secret=#{@secret}&q=location:"+@city+"+followers:%3E#{MIN_FOLLOWERS}+repos:%3E#{MIN_REPOS}+sort:followers&per_page=100&page=#{page}"
 
                 parse = (text) ->
@@ -102,26 +127,11 @@ class Top
                               name not in DISQUALIFIED
                         urls = @logins.map (login) -> "https://github.com/#{login}"
                         utils.batchGet urls, this.getStats, =>
-                                @sorted_stats = sortStats @stats
-                                fs.writeFileSync(@output_dir+"/data/user-data-"+@city+".json"
-                                        , JSON.stringify(@sorted_stats))
-                                this.to_csv( @sorted_stats, @output_dir+"/data/user-data-"+@city+".csv")
-                                today = new Date()
-                                from = new Date()
-                                from.setYear today.getFullYear() - 1
-                                data=
-                                        start_date: from.toGMTString()
-                                        end_date: from.toGMTString()
-                                        ciudad : @city
-                                        usuarios: []
-                                i = 1
-                                for user in @sorted_stats
-                                        console.log user
-                                        user.lugar = i++
-                                        data.usuarios.push( user )
-                                fs.writeFileSync(@output_dir+"/formatted/top-"+@city+".html"
-                                        , renderer.render(@layout, data) )
-                                @sorted_stats
+                                urls = @logins.map (login) -> "https://github.com/#{login}?tab=repositories"
+                                utils.batchGet urls, this.add_stars, this.give_format
+
+
+
 
 
 module.exports = Top
