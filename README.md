@@ -1,13 +1,16 @@
-# GitHub City Rankings
+# Github City Rankings Automated
 
-
-This project is a fork of [Top GitHub Users](https://github.com/paulmillr/top-github-users) by [Paul Miller](http://paulmillr.com/).
+This project is a fork of [GitHub City Rankings](https://github.com/JJ/github-city-rankings) of [JJ](https://github.com/JJ)(witch is a fork of [Top GitHub Users](https://github.com/paulmillr/top-github-users) by [Paul Miller](http://paulmillr.com/))
 
 ## Usage
 
-First, create the directories where data is going to be placed. These directories will be defined in `config.json`.
-Create an ID and SECRET in your GitHub account. If you don't, you wont be able to do more than a couple of runs per hour (20 request in total). Then, set them with
+First, create the directories where data is going to be placed. You must to create it in the project folder (see config.json)
+      +top-github-users-data
+      |--data
+      |--formatted
 
+
+Then, you have to put your keys in "keys" file. How I get this keys? [See this](https://developer.github.com/v3/oauth/)
 ```basH
 export GH_ID=LONG_HEXA_number
 export GH_SECRET=EVEN_LONGER_HEXA_number
@@ -21,16 +24,28 @@ Install `node.js` and `coffeescript`. You're better off if you install `nvm` and
 npm install -g coffee-script
 # Install deps. from package.json
 npm install
-# Generate data
-./get-city.coffee <city of your election>
 ```
+
+
+Finally, you run it:
+```
+./ejecutar.sh
+```
+
+You have to serve "web" directory using a web server (like Apache or Nginx).
+
+
+![Pantallazo](pantallazo.png)
+
+
+
 
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2013,2014 Paul Miller (http://paulmillr.com/) JJ Merelo (http://jj.github.io)
+Copyright (c) 2013,2014 Paul Miller (http://paulmillr.com/) JJ Merelo (http://jj.github.io) Israel Blancas (http://iblancasa.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
@@ -49,4 +64,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
->>>>>>> 324eec035098965ef1c77a1f84a15fba1f1cf22b

@@ -13,17 +13,20 @@
 <body>
   <div id="map-canvas"></div>
   <aside id="panel">
+    <img src="iconos/logo.png"/>
     <section id="ciudad"></section>
 
 
     <section id="aviso">
-        <p><a href="https://github.com/iblancasa/TweetMonuments">TweetMonuments</a> de <a href="https://github.com/iblancasa">Iblancasa</a> bajo licencia GPLv2</p>
+        <p><a href="https://github.com/iblancasa/github-city-rankings-automated">github-city-rankings-automated</a> de <a href="https://github.com/iblancasa">Iblancasa</a> bajo licencia MIT. Funciona con <a href="https://github.com/JJ/github-city-rankings">github-city-rankings</a> de <a href="https://github.com/JJ">JJ</a> un fork de <a href="https://github.com/paulmillr/top-github-users">top-github-users</a></p>
+
+
     </section>
   </aside>
 </body>
 <script type="text/javascript">
   google.maps.event.addDomListener(window, 'load', initialize);
-  $(".monumento").hide();
+  $("#ciudad").hide();
 </script>
 <script src="fix.js"></script>
 </html>
