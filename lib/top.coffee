@@ -36,6 +36,7 @@ class Top
 
                 @output_dir = @config.output_dir
                 @layout = @config.layout
+                @layout2 = @config.layout2
                 @id = id
                 @secret = secret
                 @logins = []
@@ -110,6 +111,8 @@ class Top
                         data.usuarios.push( user )
                 fs.writeFileSync(@output_dir+"/formatted/top-"+@city+".html"
                         , @renderer.render(@layout, data) )
+                fs.writeFileSync(@output_dir+"/formatted/top-"+@city+".md"
+                        , @renderer.render(@layout2, data) )
                 @sorted_stats
 
 

@@ -61,7 +61,7 @@ while true; do
   do
       echo $i;
       ./get-city.coffee $i;
-      sleep 3m;
+      sleep 5m;
   done
   sleep 1m;
 done

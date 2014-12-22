@@ -1,4 +1,5 @@
 {
     "output_dir": "top-github-users-data",
-    "layout": "layout.ect"
+    "layout": "layout.ect",
+    "layout2": "md.etc"
 }
