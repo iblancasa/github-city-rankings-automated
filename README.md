@@ -1,12 +1,17 @@
 # Github City Rankings Automated
 
+
+![Logo](web/iconos/logo.png)
+
+
 This project is a fork of [GitHub City Rankings](https://github.com/JJ/github-city-rankings) of [JJ](https://github.com/JJ)(witch is a fork of [Top GitHub Users](https://github.com/paulmillr/top-github-users) by [Paul Miller](http://paulmillr.com/))
 
 ## Usage
 
 First, create the directories where data is going to be placed. You must to create it in the project folder (see config.json)
+
       +top-github-users-data
-      |--data
+      |-- data
       |--formatted
 
 

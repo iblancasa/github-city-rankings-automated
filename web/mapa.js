@@ -2,6 +2,8 @@ var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
 
+var dir="../top-github-users-data/formatted/";
+
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
   var inicio = new google.maps.LatLng(40.4378271, -3.6795367);
@@ -25,7 +27,7 @@ function initialize() {
 
   google.maps.event.addListener(alavaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Alava.html", function( data ) {
+    $.get( dir+"top-Alava.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -42,7 +44,7 @@ function initialize() {
 
   google.maps.event.addListener(albaceteG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Albacete.html", function( data ) {
+    $.get( dir+"top-Albacete.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -59,7 +61,7 @@ function initialize() {
 
   google.maps.event.addListener(alicanteG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Alicante.html", function( data ) {
+    $.get( dir+"top-Alicante.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -76,7 +78,7 @@ function initialize() {
 
   google.maps.event.addListener(almeriaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Almeria.html", function( data ) {
+    $.get(  dir+"top-Almeria.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -93,7 +95,7 @@ function initialize() {
 
   google.maps.event.addListener(asturiasG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Asturias.html", function( data ) {
+    $.get(  dir+"formatted/top-Asturias.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -110,7 +112,7 @@ function initialize() {
 
   google.maps.event.addListener(avilaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Avila.html", function( data ) {
+    $.get(  dir+"top-Avila.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -127,7 +129,7 @@ function initialize() {
 
   google.maps.event.addListener(badajozG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Badajoz.html", function( data ) {
+    $.get(  dir+"top-Badajoz.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -144,7 +146,7 @@ function initialize() {
 
   google.maps.event.addListener(barcelonaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Barcelona.html", function( data ) {
+    $.get(  dir+"top-Barcelona.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -161,7 +163,7 @@ function initialize() {
 
   google.maps.event.addListener(burgosG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Burgos.html", function( data ) {
+    $.get(  dir+"top-Burgos.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -178,7 +180,7 @@ function initialize() {
 
   google.maps.event.addListener(caceresG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Caceres.html", function( data ) {
+    $.get(  dir+"top-Caceres.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -194,7 +196,7 @@ function initialize() {
 
   google.maps.event.addListener(cadizG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Cadiz.html", function( data ) {
+    $.get(  dir+"top-Cadiz.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -211,7 +213,7 @@ function initialize() {
 
   google.maps.event.addListener(cantabriaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Cantabria.html", function( data ) {
+    $.get(  dir+"top-Cantabria.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -228,7 +230,7 @@ function initialize() {
 
   google.maps.event.addListener(castellonG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Castellon.html", function( data ) {
+    $.get(  dir+"top-Castellon.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -245,7 +247,7 @@ function initialize() {
 
   google.maps.event.addListener(ciudadRealG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Ciudad.html", function( data ) {
+    $.get( dir+"top-Ciudad.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -262,7 +264,7 @@ function initialize() {
 
   google.maps.event.addListener(cordobaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Cordoba.html", function( data ) {
+    $.get(  dir+"top-Cordoba.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -279,7 +281,7 @@ function initialize() {
 
   google.maps.event.addListener(corunaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Coruña.html", function( data ) {
+    $.get( dir+"top-Coruña.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -297,7 +299,7 @@ function initialize() {
 
   google.maps.event.addListener(geronaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Gerona.html", function( data ) {
+    $.get( dir+"top-Gerona.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -315,7 +317,7 @@ function initialize() {
 
   google.maps.event.addListener(granadaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Granada.html", function( data ) {
+    $.get(  dir+"top-Granada.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -332,7 +334,7 @@ function initialize() {
 
   google.maps.event.addListener(guadalajaraG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Guadalajara.html", function( data ) {
+    $.get(  dir+"top-Guadalajara.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -349,7 +351,7 @@ function initialize() {
 
   google.maps.event.addListener(guipuzcoaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Guipuzcoa.html", function( data ) {
+    $.get( dir+"top-Guipuzcoa.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -367,7 +369,7 @@ function initialize() {
 
   google.maps.event.addListener(huelvaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Huelva.html", function( data ) {
+    $.get(  dir+"top-Huelva.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -385,7 +387,7 @@ function initialize() {
 
   google.maps.event.addListener(huescaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Huesca.html", function( data ) {
+    $.get(  dir+"top-Huesca.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -405,7 +407,7 @@ function initialize() {
 
   google.maps.event.addListener(balearesG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Baleares.html", function( data ) {
+    $.get(  dir+"top-Baleares.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -424,7 +426,7 @@ function initialize() {
 
   google.maps.event.addListener(jaenG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Jaen.html", function( data ) {
+    $.get(  dir+"top-Jaen.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -442,7 +444,7 @@ function initialize() {
 
   google.maps.event.addListener(leonG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Leon.html", function( data ) {
+    $.get(  dir+"top-Leon.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -460,7 +462,7 @@ function initialize() {
 
   google.maps.event.addListener(leridaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Lerida.html", function( data ) {
+    $.get(  dir+"top-Lerida.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -478,7 +480,7 @@ function initialize() {
 
   google.maps.event.addListener(lugoG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Lugo.html", function( data ) {
+    $.get(  dir+"top-Lugo.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -495,7 +497,7 @@ function initialize() {
 
   google.maps.event.addListener(madridG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Madrid.html", function( data ) {
+    $.get(  dir+"top-Madrid.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -512,7 +514,7 @@ function initialize() {
 
   google.maps.event.addListener(malagaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Malaga.html", function( data ) {
+    $.get(  dir+"top-Malaga.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -530,7 +532,7 @@ function initialize() {
 
   google.maps.event.addListener(murciaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Murcia.html", function( data ) {
+    $.get( dir+"top-Murcia.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -548,7 +550,7 @@ function initialize() {
 
   google.maps.event.addListener(navarraG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Navarra.html", function( data ) {
+    $.get(  dir+"top-Navarra.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -566,7 +568,7 @@ function initialize() {
 
   google.maps.event.addListener(orenseG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Orense.html", function( data ) {
+    $.get(  dir+"top-Orense.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -584,7 +586,7 @@ function initialize() {
 
   google.maps.event.addListener(palenciaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Palencia.html", function( data ) {
+    $.get(  dir+"top-Palencia.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -601,7 +603,7 @@ function initialize() {
 
   google.maps.event.addListener(palmasG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Las.html", function( data ) {
+    $.get(  dir+"top-Las.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -617,7 +619,7 @@ function initialize() {
 
   google.maps.event.addListener(pontevedraG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Pontevedra.html", function( data ) {
+    $.get( dir+"top-Pontevedra.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -635,7 +637,7 @@ function initialize() {
 
   google.maps.event.addListener(riojaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Rioja.html", function( data ) {
+    $.get(  dir+"top-Rioja.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -652,7 +654,7 @@ function initialize() {
 
   google.maps.event.addListener(salamancaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Salamanca.html", function( data ) {
+    $.get(  dir+"top-Salamanca.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -669,7 +671,7 @@ function initialize() {
 
   google.maps.event.addListener(tenerifeG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Tenerife.html", function( data ) {
+    $.get(  dir+"top-Tenerife.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -685,7 +687,7 @@ function initialize() {
 
   google.maps.event.addListener(segoviaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Segovia.html", function( data ) {
+    $.get(  dir+"top-Segovia.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -701,7 +703,7 @@ function initialize() {
 
   google.maps.event.addListener(sevillaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Sevilla.html", function( data ) {
+    $.get(  dir+"top-Sevilla.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -717,7 +719,7 @@ function initialize() {
 
   google.maps.event.addListener(soriaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Soria.html", function( data ) {
+    $.get(  dir+"top-Soria.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -736,7 +738,7 @@ function initialize() {
 
   google.maps.event.addListener(tarragonaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Tarragona.html", function( data ) {
+    $.get(  dir+"top-Tarragona.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -752,7 +754,7 @@ function initialize() {
 
   google.maps.event.addListener(teruelG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Teruel.html", function( data ) {
+    $.get( dir+"top-Teruel.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -768,7 +770,7 @@ function initialize() {
 
   google.maps.event.addListener(toledoG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Toledo.html", function( data ) {
+    $.get(  dir+"top-Toledo.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -786,7 +788,7 @@ function initialize() {
 
   google.maps.event.addListener(valenciaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Valencia.html", function( data ) {
+    $.get(  dir+"top-Valencia.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -803,7 +805,7 @@ function initialize() {
 
   google.maps.event.addListener(valladolidG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Valladolid.html", function( data ) {
+    $.get(  dir+"top-Valladolid.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -819,7 +821,7 @@ function initialize() {
 
   google.maps.event.addListener(vizcayaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Vizcaya.html", function( data ) {
+    $.get(  dir+"top-Vizcaya.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -837,7 +839,7 @@ function initialize() {
 
   google.maps.event.addListener(zamoraG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Zamora.html", function( data ) {
+    $.get(  dir+"top-Zamora.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -853,7 +855,7 @@ function initialize() {
 
   google.maps.event.addListener(zaragozaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Zaragoza.html", function( data ) {
+    $.get(  dir+"top-Zaragoza.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -869,7 +871,7 @@ function initialize() {
 
   google.maps.event.addListener(ceutaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Ceuta.html", function( data ) {
+    $.get(  dir+"top-Ceuta.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -884,7 +886,7 @@ function initialize() {
 
   google.maps.event.addListener(melillaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( "../top-github-users-data/formatted/top-Melilla.html", function( data ) {
+    $.get(  dir+"top-Melilla.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
