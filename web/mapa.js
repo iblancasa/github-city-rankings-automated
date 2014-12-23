@@ -2,7 +2,7 @@ var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
 
-var dir="../top-github-users-data/formatted/";
+var dir="../../top-github-users-data-spain/formatted/";
 
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
@@ -27,7 +27,7 @@ function initialize() {
 
   google.maps.event.addListener(alavaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( dir+"top-Alava.html", function( data ) {
+    $.get( dir+"top-Álava.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -78,7 +78,7 @@ function initialize() {
 
   google.maps.event.addListener(almeriaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Almeria.html", function( data ) {
+    $.get(  dir+"top-Almería.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -112,7 +112,7 @@ function initialize() {
 
   google.maps.event.addListener(avilaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Avila.html", function( data ) {
+    $.get(  dir+"top-Ávila.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -180,7 +180,7 @@ function initialize() {
 
   google.maps.event.addListener(caceresG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Caceres.html", function( data ) {
+    $.get(  dir+"top-Cáceres.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -196,7 +196,7 @@ function initialize() {
 
   google.maps.event.addListener(cadizG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Cadiz.html", function( data ) {
+    $.get(  dir+"top-Cádiz.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -230,7 +230,7 @@ function initialize() {
 
   google.maps.event.addListener(castellonG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Castellon.html", function( data ) {
+    $.get(  dir+"top-Castellón.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -247,7 +247,7 @@ function initialize() {
 
   google.maps.event.addListener(ciudadRealG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( dir+"top-Ciudad.html", function( data ) {
+    $.get( dir+"top-Ciudad Real.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -264,7 +264,7 @@ function initialize() {
 
   google.maps.event.addListener(cordobaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Cordoba.html", function( data ) {
+    $.get(  dir+"top-Córdoba.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -299,7 +299,7 @@ function initialize() {
 
   google.maps.event.addListener(geronaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get( dir+"top-Gerona.html", function( data ) {
+    $.get( dir+"top-Girona.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -426,7 +426,7 @@ function initialize() {
 
   google.maps.event.addListener(jaenG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Jaen.html", function( data ) {
+    $.get(  dir+"top-Jaén.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -444,7 +444,7 @@ function initialize() {
 
   google.maps.event.addListener(leonG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Leon.html", function( data ) {
+    $.get(  dir+"top-León.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -514,7 +514,7 @@ function initialize() {
 
   google.maps.event.addListener(malagaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Malaga.html", function( data ) {
+    $.get(  dir+"top-Málaga.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -603,7 +603,7 @@ function initialize() {
 
   google.maps.event.addListener(palmasG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Las.html", function( data ) {
+    $.get(  dir+"top-Las Palmas.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
