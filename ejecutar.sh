@@ -61,7 +61,13 @@ while true; do
   do
       echo $i;
       ./get-city.coffee $i;
-      sleep 5m;
+      sleep 2m;
   done
+
+  ##Madrid y Barcelona dan algunos problemas, al tener muchos. Así parece que se soluciona
+  sleep 2m;
+  ./get-city.coffee Barcelona;
+  sleep 5m;
+  ./get-city.coffee Madrid;
   sleep 1m;
 done
