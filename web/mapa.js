@@ -2,7 +2,7 @@ var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
 
-var dir="../../top-github-users-data-spain/formatted/";
+var dir="formatted/";
 
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
@@ -18,20 +18,6 @@ function initialize() {
   var image = 'iconos/github.png';
 
   /******************************************************A*/
-  var alava = new google.maps.LatLng(42.8446121, -2.759727);
-  var alavaG = new google.maps.Marker({
-    position: alava,
-    map: map,
-    icon: image
-  });
-
-  google.maps.event.addListener(alavaG, 'click', function() {
-    $("#ciudad").hide(500);
-    $.get( dir+"top-Álava.html", function( data ) {
-      $( "#ciudad" ).html( data );
-    });
-    $("#ciudad").show(500);
-  });
 
 
 
@@ -79,23 +65,6 @@ function initialize() {
   google.maps.event.addListener(almeriaG, 'click', function() {
     $("#ciudad").hide(500);
     $.get(  dir+"top-Almería.html", function( data ) {
-      $( "#ciudad" ).html( data );
-    });
-    $("#ciudad").show(500);
-  });
-
-
-
-  var asturias = new google.maps.LatLng(43.2745375, -5.8465416);
-  var asturiasG = new google.maps.Marker({
-    position: asturias,
-    map: map,
-    icon: image
-  });
-
-  google.maps.event.addListener(asturiasG, 'click', function() {
-    $("#ciudad").hide(500);
-    $.get(  dir+"formatted/top-Asturias.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -153,6 +122,21 @@ function initialize() {
   });
 
 
+  var bilbao = new google.maps.LatLng(  43.2633235,-2.9335644);
+  var bilbaoG = new google.maps.Marker({
+    position: bilbao,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(bilbaoG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Bilbao.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
 
   var burgos = new google.maps.LatLng(42.344126, -3.6946931);
   var burgosG = new google.maps.Marker({
@@ -202,22 +186,6 @@ function initialize() {
     $("#ciudad").show(500);
   });
 
-
-
-  var cantabria = new google.maps.LatLng(43.1358713, -4.0007151);
-  var cantabriaG = new google.maps.Marker({
-    position: cantabria,
-    map: map,
-    icon: image
-  });
-
-  google.maps.event.addListener(cantabriaG, 'click', function() {
-    $("#ciudad").hide(500);
-    $.get(  dir+"top-Cantabria.html", function( data ) {
-      $( "#ciudad" ).html( data );
-    });
-    $("#ciudad").show(500);
-  });
 
 
 
@@ -288,8 +256,56 @@ function initialize() {
   });
 
 
+  var cuenca = new google.maps.LatLng(40.0619721,-2.1480249);
+  var cuencaG = new google.maps.Marker({
+    position: cuenca,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(cuencaG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get( dir+"top-Coruña.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
+  /******************************************************D*/
+
+  var donostia = new google.maps.LatLng(43.3072926,-1.973883);
+  var donostiaG = new google.maps.Marker({
+    position: donostia,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(donostiaG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get( dir+"top-Donostia.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
 
   /******************************************************G*/
+
+  var gijon = new google.maps.LatLng(43.5314284,-5.6684545);
+  var gijonG = new google.maps.Marker({
+    position: gijon,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(gijonG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Gijón.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
+
   var gerona = new google.maps.LatLng(41.9964538,2.7647881);
   var geronaG = new google.maps.Marker({
     position: gerona,
@@ -340,22 +356,6 @@ function initialize() {
     $("#ciudad").show(500);
   });
 
-
-
-  var guipuzcoa = new google.maps.LatLng(43.1454624,-2.1660136);
-  var guipuzcoaG = new google.maps.Marker({
-    position: guipuzcoa,
-    map: map,
-    icon: image
-  });
-
-  google.maps.event.addListener(guipuzcoaG, 'click', function() {
-    $("#ciudad").hide(500);
-    $.get( dir+"top-Guipuzcoa.html", function( data ) {
-      $( "#ciudad" ).html( data );
-    });
-    $("#ciudad").show(500);
-  });
 
 
 
@@ -433,6 +433,22 @@ function initialize() {
   });
 
 
+
+  var jerez = new google.maps.LatLng(36.6876056,-6.1229854);
+  var jerezG = new google.maps.Marker({
+    position: jerez,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(jerezG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Jerez.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
   /******************************************************L*/
 
   var leon = new google.maps.LatLng(42.6036057,-5.5773913);
@@ -453,23 +469,36 @@ function initialize() {
 
 
 
-  var lerida = new google.maps.LatLng(41.6183423,0.6199348);
-  var leridaG = new google.maps.Marker({
-    position: lerida,
+  var lleida = new google.maps.LatLng(41.6183423,0.6199348);
+  var lleidaG = new google.maps.Marker({
+    position: lleida,
     map: map,
     icon: image
   });
 
-  google.maps.event.addListener(leridaG, 'click', function() {
+  google.maps.event.addListener(lleidaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Lerida.html", function( data ) {
+    $.get(  dir+"top-Lleida.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
   });
 
 
+  var logroño = new google.maps.LatLng(42.4602928,-2.4483627);
+  var logroñoG = new google.maps.Marker({
+    position: logroño,
+    map: map,
+    icon: image
+  });
 
+  google.maps.event.addListener(logroñoG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Logroño.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
 
   var lugo = new google.maps.LatLng(43.0122837,-7.5565001);
   var lugoG = new google.maps.Marker({
@@ -540,22 +569,6 @@ function initialize() {
 
 
 
-  /******************************************************N*/
-  var navarra = new google.maps.LatLng(42.6123428,-1.6120166);
-  var navarraG = new google.maps.Marker({
-    position: navarra,
-    map: map,
-    icon: image
-  });
-
-  google.maps.event.addListener(navarraG, 'click', function() {
-    $("#ciudad").hide(500);
-    $.get(  dir+"top-Navarra.html", function( data ) {
-      $( "#ciudad" ).html( data );
-    });
-    $("#ciudad").show(500);
-  });
-
 
 
   /******************************************************O*/
@@ -568,7 +581,41 @@ function initialize() {
 
   google.maps.event.addListener(orenseG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Orense.html", function( data ) {
+    $.get(  dir+"top-Ourense.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
+
+  var oviedo = new google.maps.LatLng(43.3694869,-5.8486578);
+  var oviedoG = new google.maps.Marker({
+    position: oviedo,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(oviedoG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Oviedo.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
+
+  /******************************************************P*/
+
+  var pamplona = new google.maps.LatLng(42.815766,-1.6500216);
+  var pamplonaG = new google.maps.Marker({
+    position: pamplona,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(pamplonaG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Pamplona.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -576,7 +623,6 @@ function initialize() {
 
 
 
-  /******************************************************P*/
   var palencia = new google.maps.LatLng(42.0088161,-4.5269538);
   var palenciaG = new google.maps.Marker({
     position: palencia,
@@ -627,23 +673,6 @@ function initialize() {
 
 
 
-  /******************************************************R*/
-  var rioja = new google.maps.LatLng(42.2816493,-2.4064864);
-  var riojaG = new google.maps.Marker({
-    position: rioja,
-    map: map,
-    icon: image
-  });
-
-  google.maps.event.addListener(riojaG, 'click', function() {
-    $("#ciudad").hide(500);
-    $.get(  dir+"top-Rioja.html", function( data ) {
-      $( "#ciudad" ).html( data );
-    });
-    $("#ciudad").show(500);
-  });
-
-
   /******************************************************S*/
   var salamanca = new google.maps.LatLng(40.9634385,-5.6692121);
   var salamancaG = new google.maps.Marker({
@@ -672,6 +701,23 @@ function initialize() {
   google.maps.event.addListener(tenerifeG, 'click', function() {
     $("#ciudad").hide(500);
     $.get(  dir+"top-Tenerife.html", function( data ) {
+      $( "#ciudad" ).html( data );
+    });
+    $("#ciudad").show(500);
+  });
+
+
+
+  var santander = new google.maps.LatLng(43.4613444, -3.8111371);
+  var santanderG = new google.maps.Marker({
+    position: santander,
+    map: map,
+    icon: image
+  });
+
+  google.maps.event.addListener(santanderG, 'click', function() {
+    $("#ciudad").hide(500);
+    $.get(  dir+"top-Santander.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -812,16 +858,16 @@ function initialize() {
   });
 
 
-  var vizcaya = new google.maps.LatLng(43.2195617,-2.9309957);
-  var vizcayaG = new google.maps.Marker({
-    position: vizcaya,
+  var vitoria = new google.maps.LatLng(42.8540369, -2.6771581);
+  var vitoriaG = new google.maps.Marker({
+    position: vitoria,
     map: map,
     icon: image
   });
 
-  google.maps.event.addListener(vizcayaG, 'click', function() {
+  google.maps.event.addListener(vitoriaG, 'click', function() {
     $("#ciudad").hide(500);
-    $.get(  dir+"top-Vizcaya.html", function( data ) {
+    $.get( dir+"top-Vitoria.html", function( data ) {
       $( "#ciudad" ).html( data );
     });
     $("#ciudad").show(500);
@@ -862,7 +908,7 @@ function initialize() {
   });
 
   /***************************************Ciudades autónomas*/
-  var ceuta = new google.maps.LatLng(35.8889625,-5.3185258);
+  var ceuta = new google.maps.LatLng(35.8889624,-5.3185258);
   var ceutaG = new google.maps.Marker({
     position: ceuta,
     map: map,

@@ -1,7 +1,7 @@
 # Cosas por hacer/arreglar
 
 + [ ] Arreglar problema con provincias compuestas
-+ [ ] Poner sistema online
++ [X] Poner sistema online
 + [ ] Optimizar ficheros estáticos
 + [x] Hacer más sencilla la configuración del mapa
 + [ ] Mostrar foto del primero de cada provincia

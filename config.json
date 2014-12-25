@@ -1,6 +1,6 @@
 {
-    "output_dir": "../top-github-users-data-spain",
+    "output_dir": "../auto-pages",
     "layout": "layout.ect",
     "layout2": "md.etc",
-    "exclude" : "(Argentina|Cuarto|AR|Mexico|México|Méjico|Mejico|Mx)"
+    "exclude" : "(Argentina|Cuarto|AR|Mexico|México|Méjico|Mejico|Mx|MX|MJ|Jalisco|JL|Jal|Jalisco.|MEX|M'exico|JA|Jal.)"
 }
