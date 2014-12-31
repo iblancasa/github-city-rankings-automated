@@ -59,9 +59,12 @@ ciudades[52]="Ceuta";
 ciudades[53]="Melilla";
 
 
+#while true; do
   for i in "${ciudades[@]}"
   do
       echo $i;
       ./get-city.coffee $i;
       sleep 3m;
   done
+  sleep 1m;
+#done;
